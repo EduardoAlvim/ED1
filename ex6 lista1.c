@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*A  nota  final  de  um  estudante  é  calculada  a  partir  de  três  notas  atribuídas, respectivamente,
-a  um trabalho de laboratório, a  uma  avaliação  semestral e  a um  exame final.
-A média das três notas mencionadas obedece aos pesos a seguir:
+/*A  nota  final  de  um  estudante  Ã©  calculada  a  partir  de  trÃªs  notas  atribuÃ­das, respectivamente,
+a  um trabalho de laboratÃ³rio, a  uma  avaliaÃ§Ã£o  semestral e  a um  exame final.
+A mÃ©dia das trÃªs notas mencionadas obedece aos pesos a seguir:
 
-Trabalho de laboratório: 2
-Avaliação semestral: 3
+Trabalho de laboratÃ³rio: 2
+AvaliaÃ§Ã£o semestral: 3
 Exame final: 5
 
-Faça  um  algoritmo  que  receba  as  três  notas,  calcule  e  mostre  a  média  ponderada
+FaÃ§a  um  algoritmo  que  receba  as  trÃªs  notas,  calcule  e  mostre  a  mÃ©dia  ponderada
 e  o conceito eu segue a tabela:
 
 8,01 -> 10,0 A
@@ -42,16 +42,16 @@ void main()
     if(media >= 8.01){
         printf("\nConceito A");
     }
-    else if(7.01 <= media <=8){
+    else if(media >= 7.01 && media<=8){
         printf("\nConceito B");
     }
-    else if(6.01 <= media <=7){
+    else if(media >= 6.01 && media <=7){
         printf("\nConceito C");
     }
-    else if(5.01 <= media <=6){
+    else if(media >= 5.01 && media <=6){
         printf("\nConceito D");
     }
-    else if(0 <= media <=5){
+    else if(media >=0 && media <=5){
         printf("\nConceito E");
     }
 
@@ -74,16 +74,16 @@ void main()
     if(media >= 8.01){
         printf("\nConceito A");
     }
-    else if(7.01 <= media <=8){
+    else if(media >= 7.01 && media<=8){
         printf("\nConceito B");
     }
-    else if(6.01 <= media <=7){
+    else if(media >= 6.01 && media <=7){
         printf("\nConceito C");
     }
-    else if(5.01 <= media <=6){
+    else if(media >= 5.01 && media <=6){
         printf("\nConceito D");
     }
-    else if(0 <= media <=5){
+    else if(media >=0 && media <=5){
         printf("\nConceito E");
     }
 
@@ -106,16 +106,16 @@ void main()
     if(media >= 8.01){
         printf("\nConceito A");
     }
-    else if(7.01 <= media <=8){
+    else if(media >= 7.01 && media<=8){
         printf("\nConceito B");
     }
-    else if(6.01 <= media <=7){
+    else if(media >= 6.01 && media <=7){
         printf("\nConceito C");
     }
-    else if(5.01 <= media <=6){
+    else if(media >= 5.01 && media <=6){
         printf("\nConceito D");
     }
-    else if(0 <= media <=5){
+    else if(media >=0 && media <=5){
         printf("\nConceito E");
     }
 
