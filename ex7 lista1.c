@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Faça um algoritmo que receba quatro valores: I, A, B e C. Desses valores, I é inteiro positivo, A, B e C são reais.
-Escreva os números A, B e C obedecendo à tabela a seguir: Suponha que o valor digitado para I seja sempre um valor válido,
-ou seja, 1, 2 ou 3 e que os números digitados sejam diferentes um do outro.
+/* FaÃ§a um algoritmo que receba quatro valores: I, A, B e C. Desses valores, I Ã© inteiro positivo, A, B e C sÃ£o reais.
+Escreva os nÃºmeros A, B e C obedecendo Ã  tabela a seguir: Suponha que o valor digitado para I seja sempre um valor vÃ¡lido,
+ou seja, 1, 2 ou 3 e que os nÃºmeros digitados sejam diferentes um do outro.
 
 Valor de I   Forma de Escrever
     1        A, B e C em ordem crescente
     2        A, B e C em ordem decrescente
-    3        O maior fica entre os outros dois números */
+    3        O maior fica entre os outros dois nÃºmeros */
 
 void main()
 {
@@ -29,7 +29,7 @@ void main()
         medio = B;
     }
     else if(B<menor){
-        menor = C;
+        menor = B;
     }
     else{
         medio = B;
