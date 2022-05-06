@@ -26,7 +26,6 @@ void main()
     scanf("%f",&B);
     if(B>maior){
         maior = B;
-        medio = B;
     }
     else if(B<menor){
         menor = B;
