@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Foi  feita  uma  estatística  em  cinco  cidades  brasileiras  para  coletar  dados  sobre acidentes de trânsito. Foram obtidos os seguintes dados:
-a) código da cidade;
-b) número de veículos de passeio;
-c) número de acidentes de trânsito com vitimas.
+/* Foi  feita  uma  estatÃ­stica  em  cinco  cidades  brasileiras  para  coletar  dados  sobre acidentes de trÃ¢nsito. Foram obtidos os seguintes dados:
+a) cÃ³digo da cidade;
+b) nÃºmero de veÃ­culos de passeio;
+c) nÃºmero de acidentes de trÃ¢nsito com vitimas.
 Deseja se saber:
-a)qual o maior e o menor índice de acidentes de trânsito e a qual cidade pertence;
-b)qual a média de veículos nas cinco cidades juntas;
-c)qual a média de acidentes de transito nas cidades com menos de 2000 veículos de passeio.
+a)qual o maior e o menor Ã­ndice de acidentes de trÃ¢nsito e a qual cidade pertence;
+b)qual a mÃ©dia de veÃ­culos nas cinco cidades juntas;
+c)qual a mÃ©dia de acidentes de transito nas cidades com menos de 2000 veÃ­culos de passeio.
 */
 
-struct cidade{
+typedef struct {
     int codcidade,nveiculos,nacidentes;
-};
+} cidade;
 
 void main()
 {
-    int vet[5], maior, menor,mediav, mediaa,codmaior, codmenor;
+    int maior, menor,mediav, mediaa,codmaior, codmenor;
     cidade vet[5];
-    for(int i = 0; i <5;i++){
+    for(int i = 0; i<5;i++){
         printf("\nDigite o codigo da cidade: ");
         scanf("%d",&vet[i].codcidade);
         printf("\nDigite o numero de veiculos de passeio: ");
@@ -46,6 +46,7 @@ void main()
         mediaa = mediaa + vet[i].nacidentes;
     }
     mediav = mediav/5;
-    meidaa = mediaa/5;
+    mediaa = mediaa/5;
     printf("\nCidade com maior indice de acidentes: %d com %d acidentes \nCidade com menor indice de acidentes: %d com %d acidentes \nMedia de veiculos: %d \nMedia de acidentes: %d",codmaior,maior,codmenor,menor,mediav,mediaa);
 }
+
