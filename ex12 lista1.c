@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Criar um algoritmo que receba a idade o estado civil (C – casado, S – solteiro, V – viúvo
-e D – desquitado ou separado) de várias pessoas. Calcule e imprima:
-• A quantidade de pessoas casadas;
-• A quantidade de pessoas solteiras;
-• A média das idades das pessoas viúvas;
-• A porcentagem de pessoas desquitadas ou separadas dentre todas as pessoas
+/*Criar um algoritmo que receba a idade o estado civil (C â€“ casado, S â€“ solteiro, V â€“ viÃºvo
+e D â€“ desquitado ou separado) de vÃ¡rias pessoas. Calcule e imprima:
+â€¢ A quantidade de pessoas casadas;
+â€¢ A quantidade de pessoas solteiras;
+â€¢ A mÃ©dia das idades das pessoas viÃºvas;
+â€¢ A porcentagem de pessoas desquitadas ou separadas dentre todas as pessoas
 analisadas.
-O algoritmo acaba quando se digita um número menor do que O para idade. */
+O algoritmo acaba quando se digita um nÃºmero menor do que O para idade. */
 
 void main()
 {
-    int idade, contc=0, conts=0,contv=0, contd=0, total, acmv=0;
+    int idade, contc=0, conts=0,contv=0, contd=0, total=0, acmv=0;
     char estado;
     float mediav, por;
     do
@@ -22,27 +22,36 @@ void main()
         printf("\nDigite o estado civil: ");
         fflush(stdin);
         scanf("%c",&estado);
-        if(estado == 'C' || estado == 'c'){
+        if(estado == 'C' || estado == 'c')
+        {
             contc++;
             total++;
         }
-        else if(estado == 'S' || estado == 's'){
+        else if(estado == 'S' || estado == 's')
+        {
             conts++;
             total++;
         }
-        else if(estado == 'V' || estado == 'v'){
+        else if(estado == 'V' || estado == 'v')
+        {
             contv++;
             acmv = acmv + idade;
             total++;
         }
-        else if(estado == 'D' || estado == 'd'){
+        else if(estado == 'D' || estado == 'd')
+        {
             contd++;
             total++;
         }
     }
     while(idade > 0);
-    mediav = acmv / contv;
-    por = contd/total;
-    por = por * 100;
-    printf("\nQuantidade de pessoas casadas: %d \nQuantidade de pessoas solteiras: %d \nMedia das idades das pessoas viúvas: %f \nPorcentagem de pessoas desquitadas: %f",contc,conts,mediav,por);
+    if(contv != 0)
+    {
+        mediav = acmv / contv;
+    }
+    if(contd != 0)
+    {
+        por = ((float)contd/(float)total) * 100;
+    }
+    printf("\nQuantidade de pessoas casadas: %d \nQuantidade de pessoas solteiras: %d \nMedia das idades das pessoas viÃºvas: %f \nPorcentagem de pessoas desquitadas: %f",contc,conts,mediav,por);
 }
