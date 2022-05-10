@@ -11,7 +11,8 @@ b)qual a média de veículos nas cinco cidades juntas;
 c)qual a média de acidentes de transito nas cidades com menos de 2000 veículos de passeio.
 */
 
-typedef struct {
+typedef struct
+{
     int codcidade,nveiculos,nacidentes;
 } cidade;
 
@@ -19,29 +20,37 @@ void main()
 {
     int maior, menor,mediav, mediaa,codmaior, codmenor;
     cidade vet[5];
-    for(int i = 0; i<5;i++){
+    for(int i = 0; i<5; i++)
+    {
         printf("\nDigite o codigo da cidade: ");
         scanf("%d",&vet[i].codcidade);
         printf("\nDigite o numero de veiculos de passeio: ");
         scanf("%d",&vet[i].nveiculos);
         printf("\nDigite o numero de acidentes: ");
         scanf("%d",&vet[i].nacidentes);
-        if(i=0){
+        if(i==0)
+        {
+            maior = vet[i].nacidentes;
+            codmaior = vet[i].codcidade;
+            menor = vet[i].nacidentes;
+            codmenor = vet[i].codcidade;
+        }
+        else
+        {
+            if(vet[i].nacidentes > maior)
+            {
                 maior = vet[i].nacidentes;
                 codmaior = vet[i].codcidade;
+            }
+            else if(vet[i].nacidentes < menor)
+            {
                 menor = vet[i].nacidentes;
                 codmenor = vet[i].codcidade;
-        }
-        else{
-            if(vet[i].nacidentes > maior){
-                maior = vet[i].nacidentes;
-            }
-            else if(vet[i].nacidentes < menor){
-                menor = vet[i].nacidentes;
             }
         }
     }
-    for (int i = 0; i <5;i++){
+    for (int i = 0; i <5; i++)
+    {
         mediav = mediav + vet[i].nveiculos;
         mediaa = mediaa + vet[i].nacidentes;
     }
@@ -49,4 +58,3 @@ void main()
     mediaa = mediaa/5;
     printf("\nCidade com maior indice de acidentes: %d com %d acidentes \nCidade com menor indice de acidentes: %d com %d acidentes \nMedia de veiculos: %d \nMedia de acidentes: %d",codmaior,maior,codmenor,menor,mediav,mediaa);
 }
-
