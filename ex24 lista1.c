@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Faça  um  programa  que  carregue  uma  matriz  15x5 com  números  inteiros,  calcule  e mostre  quais  os  elementos  da  matriz  que  se  repetem
-e  quantas  vezes  cada  um  está repetido. */
+/*FaÃ§a  um  programa  que  carregue  uma  matriz  15x5 com  nÃºmeros  inteiros,  calcule  e mostre  quais  os  elementos  da  matriz  que  se  repetem
+e  quantas  vezes  cada  um  estÃ¡ repetido. */
 
 void main()
 {
@@ -36,7 +36,7 @@ void main()
                         }
                     }
                 }
-                 if(cont != 0)
+                 if(cont > 0)
                         {
                             printf("\n O valor %d, apareceu %d vezes",aux, cont);
                         }
