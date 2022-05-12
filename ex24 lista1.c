@@ -36,7 +36,7 @@ void main()
                         }
                     }
                 }
-                 if(cont > 0)
+                 if(cont > 1)
                         {
                             printf("\n O valor %d, apareceu %d vezes",aux, cont);
                         }
