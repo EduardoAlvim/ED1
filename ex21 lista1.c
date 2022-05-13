@@ -30,8 +30,9 @@ void main()
 
         aux++;
     }
-
+    printf("\nVetor final:\n[ ");
     for (int i = 0; i < 99; i++){
-        printf("%d\n", vet[i]);
+        printf("%d ", vet[i]);
     }
+    printf("]");
 }
