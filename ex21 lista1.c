@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*  FaÁa um algoritmo para apagar valores de um vetor de no m·ximo cem valores
-numÈricos. O usu·rio digita um valor e o algoritmo deve apagar e reorganizar o vetor. */
+/*  Fa√ßa um algoritmo para apagar valores de um vetor de no m√°ximo cem valores
+num√©ricos. O usu√°rio digita um valor e o algoritmo deve apagar e reorganizar o vetor. */
 
 void main()
 {
@@ -31,7 +31,7 @@ void main()
         aux++;
     }
 
-    for (int i = 0; vet[i] != ultimo; i++){
+    for (int i = 0; i < 99; i++){
         printf("%d\n", vet[i]);
     }
 }
